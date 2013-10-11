@@ -19,6 +19,9 @@ try:
 except ImportError:
     collect_ignore.append("tests/contrib/webpy")
 
+pytest_plugins = [
+    'pytest_twisted',
+]
 
 INSTALLED_APPS = [
     'django.contrib.auth',

@@ -47,6 +47,12 @@ webpy_tests_requires = [
     'web.py',
 ]
 
+twisted_tests_requires = [
+    'Twisted',
+    'pytest-twisted',
+]
+
+
 # If it's python3, remove flask, unittest2 & web.py
 if sys.version_info[0] == 3:
     flask_requires = []
